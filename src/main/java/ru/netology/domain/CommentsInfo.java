@@ -3,8 +3,10 @@ package ru.netology.domain;
 public class CommentsInfo {
     private int count;
     private boolean canPost;
+    private boolean groupCanPost;
     private int dateComment;
-    private boolean canReply;
+    private boolean canOpen;
+    private boolean canClose;
 
     public int getCount() {
         return count;
@@ -22,6 +24,14 @@ public class CommentsInfo {
         this.canPost = canPost;
     }
 
+    public boolean isGroupCanPost() {
+        return groupCanPost;
+    }
+
+    public void setGroupCanPost(boolean groupCanPost) {
+        this.groupCanPost = groupCanPost;
+    }
+
     public int getDateComment() {
         return dateComment;
     }
@@ -30,11 +40,19 @@ public class CommentsInfo {
         this.dateComment = dateComment;
     }
 
-    public boolean isCanReply() {
-        return canReply;
+    public boolean isCanOpen() {
+        return canOpen;
     }
 
-    public void setCanReply(boolean canReply) {
-        this.canReply = canReply;
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
+    }
+
+    public boolean isCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
     }
 }
