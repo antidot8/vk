@@ -4,7 +4,7 @@ public class LikesInfo {
     private int count;
     private boolean canLike;
     private boolean userLikes;
-    private boolean can_publish;
+    private boolean canPublish;
 
     public int getCount() {
         return count;
@@ -31,10 +31,10 @@ public class LikesInfo {
     }
 
     public boolean isCan_publish() {
-        return can_publish;
+        return canPublish;
     }
 
     public void setCan_publish(boolean can_publish) {
-        this.can_publish = can_publish;
+        this.canPublish = can_publish;
     }
 }
